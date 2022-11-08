@@ -1,0 +1,403 @@
+body, html {
+    height: 100%;
+}
+
+
+
+.banner {
+    height: 20%;
+    background-color: aquamarine;
+    background-image: url("/images/gift_set1.png"), url("/images/logo.png") ;
+
+
+}
+
+.border { 
+    border-style: solid;
+    border-width: medium;
+    border-color: black;
+
+
+}
+
+.topimg {
+ 
+ height: 15%;
+ width: 15%;
+ border-radius: 8px;
+ position:relative;
+ float: left;
+ animation-name: topimgrotate;
+ animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  border-style: solid;
+    border-width: medium;
+    border-color: black;
+ 
+}
+
+
+
+.test{background-position: left; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-image: url("/images/logo.png");
+    }
+
+
+    @keyframes topimgrotate {
+  
+        0%{ transform: scale(0);   }
+        50%{ transform: rotate(360deg);}
+       
+        100% { transform: scale(-0.1);  }
+      
+      }
+
+
+      body{
+        background-color:beige;
+      }
+      
+
+
+      .container{
+        width: 90%;
+        margin: auto;
+        height: 800px;
+        padding: 2%;
+        box-sizing: border-box;
+      }
+      
+      .header{
+        width: 100%;
+        height: 25%;
+        overflow: hidden;
+        margin-bottom: 2%;
+      }
+      
+      .header img{
+        height: 95%;
+        float: left;
+        border: 4px solid olive;
+        border-radius: 25px;
+        margin-right: 2%;
+        
+      }
+
+      .title{
+        width: 60%;
+        float: left;
+        margin-top: 2%;
+        animation: slide1;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-duration: 2s;
+      }
+      .title h1{
+        font-family: Georgia, serif;
+        font-style: oblique;
+        color: olive;
+        font-size: 45px;
+        margin: 0%;
+        padding: 0%;
+      }
+      
+      .subtitle{
+        width: 60%;
+        float: left;
+        animation: slide2;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-duration: 1s;
+      }
+      .subtitle h3{
+        margin: 0%;
+        padding: 0%;
+      }
+      
+   
+      
+      @keyframes slide1 {
+        from {transform: translateY(180px);}
+        to {transform: translateY(10px);}
+      }
+      
+      @keyframes slide2 {
+        from {transform: translateY(-180px);}
+        to {transform: translateY(180px);}
+      }
+      
+      @keyframes slide3 {
+        from {transform: translateY(-180px);}
+        to {transform: translateY(180px);}
+      }
+      .frame{
+        width:100%;
+        height: 50px;
+        overflow: hidden;
+      }
+      
+      .slidegroup{
+        width: 300%;
+        height: 100%;
+        animation: slide ;
+        animation-duration: 7s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
+      
+      @keyframes slide {
+        0%  {margin-left: 0%;}
+      
+        25% {margin-left:-100%}
+      
+        50%  {margin-left: -200%}
+      
+        75% {margin-left: -100%}
+      
+        100%  {margin-left: 0%}
+      }
+      
+      .slide{
+        width: 33.33%;
+        height: 100%;
+        float: left;
+        font-size: 16px;
+        text-align: center;
+      }
+      .slide1{
+        background-color:crimson;
+      }
+      .slide2{
+        background-color:cornflowerblue;
+      }
+      .slide3{
+        background-color:darkorchid;
+      }
+      
+    
+      .flower1{
+        position: relative;
+        width:100%;
+      }
+      .flower1 img{
+        width: 100%;
+        height: 700px;
+      }
+
+      .textbox1{
+        position: absolute;
+        width: 30%;
+        font-size: 18px;
+        border: 3px solid white;
+        background-color: lightgrey;
+        padding: 1%;
+        top: 60%;
+        left: 15%;
+      }
+      
+    
+      .subblock{
+        width: 100%;
+        height: 60%;
+      }
+      
+      .imageblock1{
+        position: relative;
+        width: 45%;
+        height: 100%;
+        margin-right: 5%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        background-image: linear-gradient(to top right, rgba(153, 133, 173,0.5),rgba(82, 122, 102,0.5)), url("images/intro_img1.jpg");
+        background-size:cover;
+        background-repeat: no-repeat;
+        float: left;
+      }
+      
+      .textblock1{
+        position: absolute;
+        color: white;
+        margin-top: 30%;
+        margin-left: 10%;
+        margin-right: 25%;
+        padding: 5%;
+        border: 2px solid black;
+        word-wrap: break-word;
+      }
+      
+      .imageblock2{
+        position: relative;
+        width: 45%;
+        height: 100%;
+        float: left;
+        margin-left: 5%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        background-image: linear-gradient(to top right, rgba(153, 133, 173,0.5),rgba(82, 122, 102,0.5));
+      }
+      
+      .textblock2{
+        position: absolute;
+        color: olive;
+        margin: 5%;
+        padding: 2%;
+      }
+      
+      /* LOTION  */
+      .row{
+        margin-top: 5%;
+        margin-bottom: 5%;
+        height: 75%;
+      }
+      .row:nth-child(2){
+        margin-bottom: 25%;
+      }
+      .product{
+        width: 25%;
+        height: 20%;
+        box-sizing: border-box;
+        margin: 1%;
+        padding: 2%;
+        float: right;
+        text-align: center;
+      }
+      .product figcaption{
+        font-size: 12px;
+        color: olive;
+      }
+      .product img{
+        width:100%;
+      }
+      .product a:hover{
+        color:black;
+        background-color: lightgrey;
+      }
+      
+      .link{
+        text-decoration: none;
+        font-size: 10px;
+        color: white;
+        background-color: black;
+        padding:4%;
+      }
+
+      /* MODAL */
+.window{
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    background-color: rgba(211, 211, 211,0.5);
+    opacity: 0;
+    pointer-events: none;
+    padding-top: 5%;
+  }
+  
+  .window:target{
+    opacity: 1;
+    pointer-events: all;
+  }
+  
+  .infobox{
+    box-sizing:border-box;
+    border: 2px solid red;
+    width: 55%;
+    height: 80%;
+    margin: auto;
+    background-color: white;
+
+  }
+  .modaltop{
+    width:80%;
+    margin-left: 10%;
+    padding: 0%;
+   
+  }
+  .modalimg {
+    width: 100%;
+    height: 100%;
+  }
+  .bulkmodal{
+    width: 100%;
+    height: 55%;
+ 
+  }
+  .bulkmodaltext{
+    width: 50%;
+    height:100%;
+    float: left;
+  }
+  .bulkmodalimg{
+    width:50%;
+    height:100%;
+    float: left;
+  }
+
+  .subinfo{
+
+    width:100%;
+    padding-bottom: 5%;
+    background-color: lightgrey;
+  
+  }
+  .subinfo p {
+    text-align: center;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 3%;
+   
+  }
+  .subinfo a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    background-color: white;
+    margin-left: 3%;
+    padding: 2%;
+  }
+  hr.modal1{
+    border-top: 2px solid lightgrey;
+    margin-bottom: 3%;
+  }
+  hr.modal2{
+    border-top: 2px solid white;
+    width: 80%;
+    margin-bottom: 5%;
+  }
+  .close{
+    text-decoration: none;
+    font-size: 20px;
+    color: grey;
+    background-color: lightgrey;
+    float: right;
+    padding: 1%;
+  }
+
+  
+
+  
+  hr.foot{
+    border-top: 1px solid white;
+    margin-bottom: 4%;
+    width: 80%;
+  }
+  .connect{
+    text-align: right;
+    margin-bottom: 10%;
+    margin-right: 2%;
+  }
+  .icons{
+    display: inline;
+  }
+  .icons img{
+    width:4%;
+    margin: 1%;
+    margin-top: 0%;
+  }
+
+  p.center {text-align: center;}
